@@ -10,8 +10,9 @@ namespace SolidConsole
         {
             var generator = new ReportGenerator();
             var report = generator.Generate(1);
-            generator.SaveReport(report);
-            generator.SendReport("someone@example.com", report);
+            var json = generator.GenerateJsonReport(1);
+            generator.SaveReport(json);
+            generator.SendReport("someone@example.com", json);
             Console.WriteLine("Report generated");
         }
     }
