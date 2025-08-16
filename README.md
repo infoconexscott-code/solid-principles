@@ -16,3 +16,15 @@ Projects are organized into two top-level folders:
 ## Goal
 
 The starting point violates several SOLID principles. The intention is to refactor this code in the future to adhere to SOLID best practices.
+
+## SOLID Principles Overview
+
+SOLID is an acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable:
+
+- **S**ingle Responsibility Principle
+- **O**pen/Closed Principle
+- **L**iskov Substitution Principle
+- **I**nterface Segregation Principle
+- **D**ependency Inversion Principle
+
+For detailed explanations and code examples, see the [documentation](docs/README.md).
