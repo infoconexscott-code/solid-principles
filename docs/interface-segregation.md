@@ -2,6 +2,8 @@
 
 Clients should not be forced to depend on methods they do not use.
 
+Introduced by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) (Uncle Bob).
+
 ## Violation
 
 ```csharp

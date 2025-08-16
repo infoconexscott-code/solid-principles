@@ -2,6 +2,8 @@
 
 High-level modules should not depend on low-level modules; both should depend on abstractions.
 
+Introduced by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) (Uncle Bob).
+
 ## Violation
 
 ```csharp
