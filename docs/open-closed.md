@@ -2,6 +2,9 @@
 
 Software entities should be open for extension but closed for modification.
 
+The idea is to design modules so that new behavior can be added by extending existing code, not by editing stable classes. This
+reduces the chance of introducing bugs into battle-tested components.
+
 Described by [Bertrand Meyer](https://en.wikipedia.org/wiki/Bertrand_Meyer).
 
 ## Violation
@@ -55,5 +58,11 @@ public class AreaCalculator
 ```
 
 `AreaCalculator` no longer changes when new shapes are introduced; instead, shapes implement `IShape` and extend behavior.
+
+## Benefits
+
+- **Reduced regression risk** – tested classes stay untouched when new functionality is added.
+- **Encourages plug-in designs** – features can be extended through inheritance or composition.
+- **Enables parallel work** – developers can create new shapes independently without merge conflicts.
 
 [Back to overview](README.md)

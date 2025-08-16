@@ -2,6 +2,10 @@
 
 A class should have only one reason to change.
 
+Keeping a single focus makes classes easier to read, test, and modify. When responsibilities
+are mixed together, even a small requirement change can force unrelated edits and lead to
+fragile code.
+
 Introduced by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) (Uncle Bob).
 
 ## Violation
@@ -46,5 +50,11 @@ public class ReportSaver
 ```
 
 Splitting responsibilities isolates reasons to change: `Report` generates data, while `ReportSaver` persists it.
+
+## Benefits
+
+- **Simpler maintenance** – adjustments to how a report is created or saved do not influence each other.
+- **Easier testing** – each class can be exercised in isolation with focused unit tests.
+- **Greater reuse** – other components can consume `Report` without bringing in file system concerns.
 
 [Back to overview](README.md)
