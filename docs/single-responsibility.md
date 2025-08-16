@@ -2,6 +2,8 @@
 
 A class should have only one reason to change.
 
+Introduced by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) (Uncle Bob).
+
 ## Violation
 
 ```csharp

@@ -2,6 +2,8 @@
 
 Software entities should be open for extension but closed for modification.
 
+Described by [Bertrand Meyer](https://en.wikipedia.org/wiki/Bertrand_Meyer).
+
 ## Violation
 
 ```csharp

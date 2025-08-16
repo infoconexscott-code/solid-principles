@@ -1,6 +1,6 @@
 # SOLID Principles
 
-This folder contains deep dives into each of the SOLID principles. Each document includes:
+This folder contains deep dives into each of the SOLID principles. The acronym was introduced by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) (Uncle Bob). Each document includes:
 
 - A brief description of the principle.
 - A C# example that **violates** the principle.

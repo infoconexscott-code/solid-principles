@@ -2,6 +2,8 @@
 
 Subtypes must be substitutable for their base types without altering correctness.
 
+Formulated by [Barbara Liskov](https://en.wikipedia.org/wiki/Barbara_Liskov) and [Jeannette Wing](https://en.wikipedia.org/wiki/Jeannette_Wing).
+
 ## Violation
 
 ```csharp
