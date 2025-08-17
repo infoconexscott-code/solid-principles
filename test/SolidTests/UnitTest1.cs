@@ -1,31 +1,26 @@
-using System;
-using System.IO;
 using SolidLib;
-using SolidConsole;
 
 namespace SolidTests
 {
     [TestClass]
-    public class ReportTests
+    public class ReportGeneratorUnitTests
     {
         [TestMethod]
+        [TestCategory("Unit")]
         public void Generate_ReturnsPdfReport()
         {
             var generator = new ReportGenerator();
             var report = generator.Generate(1);
             Assert.AreEqual("PDF Report", report);
         }
-
+        
         [TestMethod]
-        public void Main_WritesCompletionMessage()
+        [TestCategory("Unit")]
+        public void Exporter_ReturnsPrefixedReport()
         {
-            using var sw = new StringWriter();
-            Console.SetOut(sw);
-
-            Program.Main(Array.Empty<string>());
-
-            var output = sw.ToString();
-            StringAssert.Contains(output, "Report generated");
+            var exporter = new ReportExporter();
+            var result = exporter.Export(1, "PDF Report");
+            Assert.AreEqual("PDF:PDF Report", result);
         }
     }
 }
