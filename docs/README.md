@@ -11,6 +11,10 @@ Each document includes:
 - A C# example that **violates** the principle.
 - A refactored example that **fixes** the violation with an explanation.
 
+Example implementations for each principle live in [`src/SolidLib/BadExamples`](../src/SolidLib/BadExamples).
+
+For details about current test coverage, see the [state of testability](../state-of-testability.md).
+
 ## Guides
 
 - [Single Responsibility Principle](single-responsibility.md)
