@@ -9,13 +9,30 @@ Projects are organized into two top-level folders:
 
 - `src/`
   - **SolidConsole** – Console application that generates a sample report.
-  - **SolidLib** – Class library with a `ReportGenerator` that mixes responsibilities, uses conditionals, and depends on concrete implementations.
+  - **SolidLib** – Class library with a `ReportGenerator` that mixes responsibilities, uses conditionals, and depends on concrete implementations. It also contains a `BadExamples` folder with classes that intentionally violate each principle.
 - `test/`
   - **SolidTests** – MSTest project with basic tests for the console app and the library.
+
+## Getting Started
+
+Build the solution and run the console application:
+
+```bash
+dotnet build
+dotnet run --project src/SolidConsole
+```
+
+Run the tests:
+
+```bash
+dotnet test
+```
 
 ## Goal
 
 The starting point violates several SOLID principles. The intention is to refactor this code in the future to adhere to SOLID best practices.
+
+For an overview of existing tests, see the [state of testability](state-of-testability.md).
 
 ## SOLID Principles Overview
 
